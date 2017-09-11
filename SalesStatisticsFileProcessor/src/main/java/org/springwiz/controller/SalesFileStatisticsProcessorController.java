@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springwiz.service.SalesStatisticsFileProcessorService;
 
 @RestController
-@RequestMapping(value = "fileprocessor")
+@RequestMapping(value = "/fileprocessor")
 public class SalesFileStatisticsProcessorController {
 
 	private static final String FILE_PATH = "c://springwitz//";

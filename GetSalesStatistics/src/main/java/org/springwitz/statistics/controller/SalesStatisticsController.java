@@ -13,7 +13,7 @@ import org.springwitz.statistics.model.Product;
 import org.springwitz.statistics.service.SalesStatisticsService;
 
 @RestController
-@RequestMapping(value = "getStatistics")
+@RequestMapping(value = "/getStatistics")
 public class SalesStatisticsController {
 
 	private SalesStatisticsService salesStatisticsService;
@@ -23,12 +23,12 @@ public class SalesStatisticsController {
 		this.salesStatisticsService = salesStatisticsService;
 	}
 
-	@GetMapping(value = "{productName}")
+	@GetMapping(value = "/{productName}")
 	public ResponseEntity<Product> getProductSalesStatics(@PathVariable("productName") String productName) {
 		return new ResponseEntity<>(salesStatisticsService.getSalesStatisticsOfProduct(productName), HttpStatus.OK);
 	}
 
-	@GetMapping(value = "{productNames}")
+	@GetMapping(value = "/{productNames}")
 	public ResponseEntity<List<Product>> getProductsSalesStatistics(@PathVariable("productNames") List<String> productNames) {
 		return new ResponseEntity<>(salesStatisticsService.getSalesStatisticsOfProducts(productNames), HttpStatus.OK);
 	}

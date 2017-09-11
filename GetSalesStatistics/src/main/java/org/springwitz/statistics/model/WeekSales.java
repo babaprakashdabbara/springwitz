@@ -18,7 +18,7 @@ public class WeekSales {
 		return actualSales;
 	}
 
-	public String getAcheivementPercentage() {
+	public String getAchievementPercentage() {
 		return acheivementPercentage;
 	}
 

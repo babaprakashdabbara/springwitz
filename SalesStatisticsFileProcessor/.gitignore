@@ -1,3 +1,33 @@
-/.gradle/
-/bin/
-/build/
+#Language and IDEA specific #
+*.class
+*.project
+*.classpath
+*.iml
+*.idea
+
+# Build and binary folder #
+target/
+.metadata/
+.settings/
+bin/
+build/
+.gradle/
+
+# Package Files #
+#.war
+*.ear
+*.zip
+*.dll
+*.jar
+
+#Log and other generated files#
+*.keep
+*.keep.*
+*.epoch
+*.out
+*.log
+*.dump
+*.dump.tmp
+*.lock
+*.log.*
+.vagrant

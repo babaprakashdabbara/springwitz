@@ -30,7 +30,6 @@ dependencies {
     compile("org.springframework.boot:spring-boot-configuration-processor")
     compile("org.springframework.boot:spring-boot-starter-logging")
     compile('org.springframework.boot:spring-boot-starter-tomcat')
-    compile("org.springframework.boot:spring-boot-starter-data-jpa")
     compile("org.springframework.boot:spring-boot-devtools")
     compile("org.apache.cxf:cxf-rt-transports-http:3.0.3")
     compile("org.apache.cxf:cxf-rt-frontend-jaxrs:3.0.3")
